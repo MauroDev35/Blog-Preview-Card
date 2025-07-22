@@ -72,6 +72,12 @@ body {
     border-radius: 28px;
 }
 
+.card-image:hover {
+	transform: scale(1.1, 1.1);
+    transition: 0.5s ease-in-out;
+    cursor: default;
+}
+
 .info-card {
     display: flex;
     flex-direction: column;
@@ -101,6 +107,13 @@ body {
     font-size: var(--text-note);
     font-weight: 800;
     text-align: center;
+}
+
+.tag:hover {
+    background-color: var(--primary-1);
+    color: var(--accent-1);
+
+    cursor: pointer;
 }
 
 .published-date {
@@ -136,4 +149,10 @@ body {
 
 .user-image {
     width: 35px;
+}
+
+.user-image:hover {
+	transform: scale(1.5, 1.5);
+    transition: 0.5s ease-in-out;
+    cursor: default;
 }
