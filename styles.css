@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+html {
+  /* Escala tipografica */
+    font-size: 62.5%;
+
+  /* Familias tipograficas */
+    --font-1: "Figtree", sans-serif;
+
+  /* Variables tipograficas */
+    --text-caption: 1rem;
+    --text-note: 1.2rem;
+    --text-base: 1.6rem;
+    --text-title: 2.4rem;
+
+  /* Colores */
+    --primary-1: hsl(0, 0%, 7%);
+    --secondary-1: hsl(0, 0%, 100%);
+    --secondary-2: hsl(0, 0%, 42%);
+    --accent-1: hsl(47, 88%, 63%);
+
+  /* Estilos para el scrollbar */
+    scrollbar-width: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 75px 0px;
+
+    color: var(--primary-1);
+    background-color: var(--accent-1);
+
+    font-family: var(--font-1);
+    font-size: var(--text-base);
+    font-weight: 500;
+}
+
+.container {
+    max-width: 336px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 24px;
+    border: var(--primary-1) 1px solid;
+
+    background-color: var(--secondary-1);
+
+    -webkit-box-shadow: 6px 9px 1.5px 3px #121212;
+    -moz-box-shadow: 6px 9px 1.5px 3px #121212;
+    box-shadow: 6px 9px 1.5px 3px #121212;
+}
+
+.card-image {
+    width: 320px;
+
+    padding: 18px;
+    border-radius: 28px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    padding: 8px 0px 24px 28px;
+}
+
+.info-card p {
+    margin-top: 16px;
+
+    color: var(--secondary-2);
+    font-size: var(--text-base);
+}
+
+.tag {
+    display: block;
+
+    width: 80px;
+    height: 25px;
+
+    padding: 4px 0px;
+    border-radius: 4px;
+
+    background-color: var(--accent-1);
+
+    font-size: var(--text-note);
+    font-weight: 800;
+    text-align: center;
+}
+
+.published-date {
+    margin-top: 16px;
+
+    font-size: var(--text-note);
+    font-weight: 500;
+}
+
+.title {
+    margin-top: 16px;
+
+    font-size: var(--text-title);
+    font-weight: 800;
+}
+
+.user-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 0px 24px 24px;
+}
+
+.user-card p {
+    margin: 0px 16px;
+
+    font-size: var(--text-base);
+    font-weight: 800;
+}
+
+.user-image {
+    width: 35px;
+}
